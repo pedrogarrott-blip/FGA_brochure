@@ -13,10 +13,37 @@
     <meta name="twitter:title" content="FG/A — Figueroa Garrott Arquitectos">
     <meta name="twitter:description" content="Oficina de arquitectura · 831.597 m² · 61 proyectos · 14 provincias">
     <meta name="twitter:image" content="https://pedrogarrott-blip.github.io/FGA_brochure/og-image.png">
-    <meta http-equiv="refresh" content="0;url=brochure.html">
     <style>
-        body{margin:0;height:100vh;display:flex;align-items:center;justify-content:center;background:#232220;color:#c8c6c2;font-family:Arial,sans-serif}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{height:100vh;display:flex;align-items:center;justify-content:center;
+             background:#f5f4f0;color:#333;font-family:Arial,sans-serif;text-align:center;padding:24px}
+        .container{max-width:400px}
+        .logo{width:120px;margin-bottom:20px;opacity:.8}
+        h1{font-size:1.1rem;letter-spacing:.08em;font-weight:500;margin-bottom:8px}
+        p{font-size:.85rem;color:#888;margin-bottom:24px}
+        .btn{display:inline-block;padding:14px 32px;background:#333;color:#f5f4f0;
+             text-decoration:none;font-size:.9rem;letter-spacing:.05em;border-radius:4px;
+             transition:background .2s}
+        .btn:hover{background:#555}
+        .note{font-size:.75rem;color:#aaa;margin-top:16px}
     </style>
+    <script>
+        (function(){
+            var ua = navigator.userAgent || '';
+            var isWebView = /wv|WebView/i.test(ua) || (/Android/i.test(ua) && /Version\/[\d.]+/i.test(ua));
+            var isInApp = /FBAN|FBAV|Instagram|WhatsApp|Line|Twitter/i.test(ua);
+            if (!isWebView && !isInApp) {
+                window.location.replace('brochure.html');
+            }
+        })();
+    </script>
 </head>
-<body><p>Cargando FG/A...</p></body>
+<body>
+    <div class="container">
+        <h1>FIGUEROA GARROTT ARQUITECTOS</h1>
+        <p>831.597 m² · 61 proyectos · 14 provincias</p>
+        <a class="btn" href="brochure.html" target="_blank" rel="noopener">Ver Brochure →</a>
+        <p class="note">Se abre en el navegador para la mejor experiencia</p>
+    </div>
+</body>
 </html>
